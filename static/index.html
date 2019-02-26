@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DAG visualizAAation app</title>
+
+		<link rel="stylesheet" href="css/index_style.css">
+
+		<script src="js/dagre.js"></script>
+		<script src="js/cytoscape-dagre.js"></script>
+		<script src="js/cytoscape.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">
+				<p class="unselectable info">Press f11 to toggle fullscreen</p>
+				<h1 class="unselectable">Alberi</h1>
+				<!-- All of the Node.js APIs are available in this renderer process. -->
+				<div class="functions">
+				    <input type=file name=file id="inputFiles" multiple>
+				    <!-- https://knowyourmeme.com/memes/delet-this/photos
+				    <div id="infscr-loading" style="display: none;"><img alt="Loading..." src="https://s.kym-cdn.com/assets/nyan-loader-1e8a60aa470ba72bc1ade31dcc2e150f.gif"><div><em>Loading moar...</em></div></div>
+				-->
+					<button id="crea" class="unselectable" type="button">Passa a DAG</button> 
+					<label>Search node by ID:</label>
+					<input type="search" id="search-bar">
+					<button id="node-search" class="unselectable" type="button">Search</button>
+					<button id="selected" class="unselectable" type="button">Get nodes selected</button>
+				</div>
+			</div>
+			<br>
+			<div id="cy"></div>
+			
+		</div>
+		<!-- importa roba -->
+		<script src="js/buttons.js"></script>
+		<script src="js/renderer.js"></script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+digraph G {
+node [color=deeppink4, style=filled, fontcolor=white];
+20a -> 1a;
+14a -> 2a;
+29a -> 3a;
+19a -> 4a;
+6a -> 5a;
+26a -> 6a;
+8a -> 7a;
+16a -> 8a;
+5a -> 9a;
+18a -> 10a;
+25a -> 11a;
+29a -> 12a;
+21a -> 13a;
+24a -> 14a;
+10a -> 15a;
+18a -> 16a;
+27a -> 17a;
+11a -> 18a;
+3a -> 19a;
+22a -> 20a;
+Root -> 21a;
+13a -> 22a;
+12a -> 23a;
+29a -> 24a;
+30a -> 25a;
+23a -> 26a;
+28a -> 27a;
+18a -> 28a;
+1a -> 29a;
+4a -> 30a;
+}
+
