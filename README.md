@@ -1,1 +1,1 @@
-# Megatree
+# Megatree App
