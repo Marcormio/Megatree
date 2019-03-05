@@ -39,6 +39,7 @@ document.getElementById('inputFiles').onchange = function(){
 		cyt = cytoscape({
 		  container: document.getElementById('cy'),
 
+		  wheelSensitivity: 0.2,
 
 		  layout: {
 			name: 'dagre'

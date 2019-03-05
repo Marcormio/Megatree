@@ -7,6 +7,7 @@ cytoscape.use(cytoscapeDagre ); // register extension
 var cy = cytoscape({
   container: document.getElementById('cy'),
 
+  wheelSensitivity: 0.2,
 
   layout: {
 	name: 'dagre'
