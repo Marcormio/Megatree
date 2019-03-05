@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 import parser
 
-app = Flask(__name__, static_url_path='/prova')
+app = Flask(__name__, static_url_path='/megatree')
 
 @app.route("/")
 def hello():
