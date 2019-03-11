@@ -79,10 +79,11 @@ document.getElementById('inputFiles').onchange = function(){
 		//search node
 		document.getElementById("node-search").addEventListener("click", function(){
 		  x = document.getElementById("search-bar").value ;
-		  console.log(x)
-		  node = cyt.$id(x);
-		  console.log(node)
-		  node.select();
+		  for(el=0; el<=((cyt._private.elements.length-1)/2); el++){
+		  	if(cyt._private.elements[el]._private.data.label == x){
+		  		cyt._private.elements[el].select();
+		  	}
+		  }
 		}); 
 		// search node with enter key
 		var input = document.getElementById("search-bar");
