@@ -17,15 +17,15 @@ def dotToJson(file):
 		for node in graph_netx.nodes(data=True):
 		    #print(node)
 		    if not node[1]:
-		        id_node = node[0]
+		        id_node = node[0]+f
 		        label = node[0]
 		    else:
-		        id_node = node[0]
+		        id_node = node[0]+f
 		        label = node[1]['label'].replace('"','')
 		    lista_nodi.append('{ "data": { "id": "%s", "label" : "%s"} }' % (id_node, label))
 		
 		for edge in graph_netx.edges():
-		    lista_archi.append('{ "data": { "source": "%s", "target": "%s"} }' % (edge[0], edge[1]))
+		    lista_archi.append('{ "data": { "source": "%s", "target": "%s"} }' % (edge[0]+f, edge[1]+f))
 
 	
 	a = ',\n'.join(lista_archi)
